@@ -14,12 +14,11 @@
                 ],
                 "items": [
                     {
-                        "name": "ZFS kernel value for $1",
+                        "name": "...",
                         "type": "ZABBIX_ACTIVE",
-                        "key": "sysctl.value[vfs.zfs.arc_max]",
-                        "delay": "3600",
+                        "key": "...",
+                        "delay": "1m",
                         "history": "30d",
-                        "units": "B",
                         "tags": [
                             {
                                 "tag": "Application",

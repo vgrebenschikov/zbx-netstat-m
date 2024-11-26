@@ -8,11 +8,13 @@ netstat --libxo json -m | \
 	reduce .[] as $i (
 	  [];
 	  . + [
-		$tmpl + { 
-			  "name": ("netstat-m " + ($i | gsub("-";" "))),
-			  "key": ("net.netstat.mbuf.statistics[" + ($i | gsub("-";".")) + "]"),			  
-			  "uuid": $u[0][. | length]
-	       	        }
+		$tmpl +
+		{ 
+			"name": ("netstat-m " + ($i | gsub("-";" "))),
+			"key": ("net.netstat.mbuf.statistics[" + ($i | gsub("-";".")) + "]"),			  
+			"uuid": $u[0][. | length]
+	       	} +
+	        if $i | test("bytes") then { "units": "B" } else {} end 
 	      ]
 	) | . as $items
 	| $t[0] | .zabbix_export.templates[0].items = $items' \
