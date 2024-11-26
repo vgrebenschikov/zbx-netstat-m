@@ -1,7 +1,7 @@
 {
     "zabbix_export": {
         "version": "6.0",
-        "date": "2024-11-26T22:50:49Z",
+        "date": "2024-11-26T23:05:24Z",
         "groups": [
             {
                 "uuid": "7df96b18c230490a9a0a9e2307226338",
@@ -643,6 +643,165 @@
                             {
                                 "tag": "Application",
                                 "value": "netstat-m"
+                            }
+                        ]
+                    }
+                ],
+                "dashboards": [
+                    {
+                        "uuid": "8d90d28f5a6a4c7bace8bde47e591157",
+                        "name": "netstat -m dashboard",
+                        "pages": [
+                            {
+                                "widgets": [
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "bytes allocated to network"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "y": "6",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "mbuf clusters in use"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "y": "12",
+                                        "width": "12",
+                                        "height": "9",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "mbuf problems"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "y": "21",
+                                        "width": "12",
+                                        "height": "7",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "sendfile syscalls"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "x": "12",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "mbufs in use"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "x": "12",
+                                        "y": "6",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "mbuf+clusters out of packet secondary zone in use"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "x": "12",
+                                        "y": "12",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "4k jumbo clusters in use"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "x": "12",
+                                        "y": "18",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "9k jumbo clusters in use"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "GRAPH_CLASSIC",
+                                        "x": "12",
+                                        "y": "24",
+                                        "width": "12",
+                                        "height": "6",
+                                        "fields": [
+                                            {
+                                                "type": "GRAPH",
+                                                "name": "graphid",
+                                                "value": {
+                                                    "host": "FreeBSD netstat -m",
+                                                    "name": "16k jumbo clusters in use"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
