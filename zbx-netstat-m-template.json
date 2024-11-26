@@ -1,0 +1,740 @@
+{
+  "zabbix_export": {
+    "version": "6.0",
+    "date": "2024-11-26T19:06:16Z",
+    "templates": [
+      {
+        "template": "FreeBSD netstat -m",
+        "name": "FreeBSD netstat -m",
+        "uuid": "ba57b57739ed45b3b90431c24c492784",
+        "groups": [
+          {
+            "name": "Templates"
+          }
+        ],
+        "items": [
+          {
+            "name": "netstat-m bytes in cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[bytes.in.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "e73b94c2a76449d98cac2309333a2d64"
+          },
+          {
+            "name": "netstat-m bytes in use",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[bytes.in.use]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "3651f2e2484442bfa02f698af71779ab"
+          },
+          {
+            "name": "netstat-m bytes total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[bytes.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "ec3c49c22eb14e9ab1039d3f5c574571"
+          },
+          {
+            "name": "netstat-m cluster cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "8670bb02a9fd4555a08dbff4d2fbd61b"
+          },
+          {
+            "name": "netstat-m cluster current",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.current]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "b7923f31cbf04522b80b68bc17238af2"
+          },
+          {
+            "name": "netstat-m cluster failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "f291ba8f09974ee69cf2a790d70b8354"
+          },
+          {
+            "name": "netstat-m cluster max",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.max]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "6580fcb001f9403ea005c1177267ef28"
+          },
+          {
+            "name": "netstat-m cluster sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "5c87fcea8dbd48aba375c2ccd75e31f1"
+          },
+          {
+            "name": "netstat-m cluster total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[cluster.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "c4fee7f6599a4292bc38806b3957d799"
+          },
+          {
+            "name": "netstat-m jumbo cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "cdf69e3ed4b74c8bb8446d880fef8ad6"
+          },
+          {
+            "name": "netstat-m jumbo count",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo.count]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "a5fc864c672f49878099d3ee01e4acaf"
+          },
+          {
+            "name": "netstat-m jumbo max",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo.max]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "beb310de65df4d9ba396f0e88b2319e4"
+          },
+          {
+            "name": "netstat-m jumbo page size",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo.page.size]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "b044751c393c4579b53a90179a376d3a"
+          },
+          {
+            "name": "netstat-m jumbo total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "358cc7d0d7854d0d98b3b3e0aac9348d"
+          },
+          {
+            "name": "netstat-m jumbo16 cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "90128f5042e443d6a69c57032fda66b2"
+          },
+          {
+            "name": "netstat-m jumbo16 count",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.count]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "62db306e236a460382a46fb75a13a331"
+          },
+          {
+            "name": "netstat-m jumbo16 failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "7ef3b03242cb4355adfb01845d2f6d3a"
+          },
+          {
+            "name": "netstat-m jumbo16 limit",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.limit]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "7ad782de6d334489908eb6248e8e0597"
+          },
+          {
+            "name": "netstat-m jumbo16 sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "af7dbf09b41c4e5b9c82a94d1be5fad2"
+          },
+          {
+            "name": "netstat-m jumbo16 total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo16.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "fe647c232429473496f77b9a0deca54b"
+          },
+          {
+            "name": "netstat-m jumbo9 cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "4651d67eb527409cb942cd8c6e9669ec"
+          },
+          {
+            "name": "netstat-m jumbo9 count",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.count]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "21c5924b07d447b99d85fef3fed7642e"
+          },
+          {
+            "name": "netstat-m jumbo9 failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "10dd14c091254791b917fe4b8e07bf83"
+          },
+          {
+            "name": "netstat-m jumbo9 max",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.max]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "e3eace4cd4184e838420feb40ea9717d"
+          },
+          {
+            "name": "netstat-m jumbo9 sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "cc63a45a1dcd406ab004311d9c77de71"
+          },
+          {
+            "name": "netstat-m jumbo9 total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbo9.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "584806d36ae64cbdb92d7833dab7f4dd"
+          },
+          {
+            "name": "netstat-m jumbop failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbop.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "90be21146bef4dc7ba92f5707c760e1c"
+          },
+          {
+            "name": "netstat-m jumbop sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[jumbop.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "05aaab8237734c018a597cc006fc1d5e"
+          },
+          {
+            "name": "netstat-m mbuf cache",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[mbuf.cache]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "bdc633958ce246898209e7aa73e54b64"
+          },
+          {
+            "name": "netstat-m mbuf current",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[mbuf.current]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "22d072270832490a8fe1ee98bb260d3b"
+          },
+          {
+            "name": "netstat-m mbuf failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[mbuf.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "b76041b2ce57418fa1c2b2ebac935df8"
+          },
+          {
+            "name": "netstat-m mbuf sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[mbuf.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "f70f0c37005c471b9286dd2aa142f059"
+          },
+          {
+            "name": "netstat-m mbuf total",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[mbuf.total]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "199c019b6a2349268aa7b0b08274c08f"
+          },
+          {
+            "name": "netstat-m packet count",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[packet.count]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "2eb2e809041642ff911adfe450de3e9f"
+          },
+          {
+            "name": "netstat-m packet failures",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[packet.failures]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "e089c45d7d554b31b756905a1346f1bd"
+          },
+          {
+            "name": "netstat-m packet free",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[packet.free]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "0dfbd462a20e4ccd91a934dc1539ccba"
+          },
+          {
+            "name": "netstat-m packet sleeps",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[packet.sleeps]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "e6dba8d248ad426bae6e172036dfb5d5"
+          },
+          {
+            "name": "netstat-m sendfile busy encounters",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.busy.encounters]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "d633a8cd87d94c15a7f38d305b53e01b"
+          },
+          {
+            "name": "netstat-m sendfile io count",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.io.count]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "81cbc38825574ffeba9887ff93e1d4a7"
+          },
+          {
+            "name": "netstat-m sendfile no io",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.no.io]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "2df09b59616f4750847d77944b15c940"
+          },
+          {
+            "name": "netstat-m sendfile pages bogus",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.pages.bogus]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "7a9be79e956f4ca1bcd15d9f4aa0d2fa"
+          },
+          {
+            "name": "netstat-m sendfile pages sent",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.pages.sent]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "a9c844373dc34bd4995454071f801e38"
+          },
+          {
+            "name": "netstat-m sendfile pages valid",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.pages.valid]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "6d02cea49e45408790dc25346ac71e24"
+          },
+          {
+            "name": "netstat-m sendfile readahead",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.readahead]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "ee9fe94e4af54d588a829a478d3de250"
+          },
+          {
+            "name": "netstat-m sendfile requested readahead",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.requested.readahead]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "71e0fef6c0fc4b8aa6a063d3e5e725f8"
+          },
+          {
+            "name": "netstat-m sendfile syscalls",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sendfile.syscalls]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "5d913ce056ae47b3837f3bf692c17535"
+          },
+          {
+            "name": "netstat-m sfbufs alloc failed",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sfbufs.alloc.failed]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "0d1fcaf9e2314971b583d4718487bbba"
+          },
+          {
+            "name": "netstat-m sfbufs alloc wait",
+            "type": "ZABBIX_ACTIVE",
+            "key": "net.netstat.mbuf.statistics[sfbufs.alloc.wait]",
+            "delay": "3600",
+            "history": "30d",
+            "units": "B",
+            "tags": [
+              {
+                "tag": "Application",
+                "value": "netstat-m"
+              }
+            ],
+            "uuid": "edcad23804bc4ee4b35dde6c2f0e8bde"
+          }
+        ]
+      }
+    ]
+  }
+}

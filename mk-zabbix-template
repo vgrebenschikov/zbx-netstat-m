@@ -1,0 +1,24 @@
+#!/bin/sh
+
+outfile="zbx-netstat-m-template.json"
+netstat --libxo json -m | \
+	jq --slurpfile t zbx-template.json --slurpfile u uuids.json '
+	$t[0].zabbix_export.templates[0].items[0] as $tmpl |
+	."mbuf-statistics" | keys | 
+	reduce .[] as $i (
+	  [];
+	  . + [
+		$tmpl + { 
+			  "name": ("netstat-m " + ($i | gsub("-";" "))),
+			  "key": ("net.netstat.mbuf.statistics[" + ($i | gsub("-";".")) + "]"),			  
+			  "uuid": $u[0][. | length]
+	       	        }
+	      ]
+	) | . as $items
+	| $t[0] | .zabbix_export.templates[0].items = $items' \
+> $outfile
+
+echo "Zabbix template written down to $outfile" >&2
+echo >&2
+echo "Following keys were created:" >&2
+jq -r '.zabbix_export.templates[0].items[] | "  " + .key' $outfile

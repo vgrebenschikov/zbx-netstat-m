@@ -1,0 +1,34 @@
+{
+    "zabbix_export": {
+        "version": "6.0",
+        "date": "2024-11-26T19:06:16Z",
+        "templates": [
+            {
+                "template": "FreeBSD netstat -m",
+                "name": "FreeBSD netstat -m",
+                "uuid": "ba57b57739ed45b3b90431c24c492784",
+                "groups": [
+                    {
+                        "name": "Templates"
+                    }
+                ],
+                "items": [
+                    {
+                        "name": "ZFS kernel value for $1",
+                        "type": "ZABBIX_ACTIVE",
+                        "key": "sysctl.value[vfs.zfs.arc_max]",
+                        "delay": "3600",
+                        "history": "30d",
+                        "units": "B",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "netstat-m"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
