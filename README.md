@@ -1,5 +1,12 @@
 # Zabbix template for FreeBSD netstat -m report
 
+## Prerequisites
+
+Following pors are required:
+
+- textproc/jq
+- net-mgmt/zabbix?-agent
+
 ## Install 
 
 1. Copy script to etc/zabbix.agent.d
